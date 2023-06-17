@@ -1,0 +1,18 @@
+openapi: '3.0.2'
+info:
+  title: Hello World
+  version: '1.0'
+servers:
+  - url: http://localhost:8000/hello_world
+paths:
+  /hello_world:
+    get:
+      operationId: "HelloWorld"
+      responses:
+        '200':
+          description: hello world
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "Hello, World!"
